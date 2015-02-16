@@ -4,3 +4,243 @@
 @import "variables";
 @import "mixins";
 @import "base";
+
+body {
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+  background:url('/elements/2013_subaru_brz-HD.jpg') top left no-repeat;
+  background-size: 100%;
+  font-family: 'Shift', sans-serif;
+  background-attachment:fixed;
+}
+.center{
+  margin-left: auto;
+  margin-right: auto;
+}
+ul {
+  float: right;
+}
+
+li {
+  float: left;
+  display: inline;
+}
+.navbar-brand {
+  float: left;
+  padding: 8px 13px;
+  margin-top: 8px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.section{
+  width: 100%;
+}
+.container {
+  width:1280px;
+  position: relative;
+  display: block;
+  opacity: 1;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+.container-4 {
+  padding-top: 200px;
+  width: 33.33333%;
+  float: left;
+  height: 100%;
+//  background-color: gray;
+  display:table;
+}
+.container-4 h1{
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row {
+
+}
+
+header{
+  background: lightgrey;
+  border-bottom: 1px solid #aaaaaa;
+  border-color: #e7e7e7;
+  float: left;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+header li {
+  margin-right: 30px;
+  padding:12px 10px;
+}
+header a{
+  color: #969696;
+  text-decoration: none;
+  font-family: 'Amaranth', sans-serif;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+header a.active, header a:hover{
+  color: #3d3d3d;
+}
+header.large {
+  height: 120px;
+}
+header.large li{
+  margin-top: 28px;
+  font-size: 20px;
+}
+
+header.large img{
+  width: 489px;
+  height: 113px;
+}
+header.large .navbar-brand{
+  font-size: 33px;
+  margin-top: 30px;
+//  margin-left: 30px;
+}
+header.small {
+  height: 50px;
+}
+header.small li{
+//  margin-top: 3px;
+}
+header.small .navbar-brand{
+//  margin-left: 10px;
+}
+#section1 {
+  background-color: #f7f7f7;
+  background-color: rgba(255,255,255,0.2);
+//  opacity: 0.2;
+  border-bottom: 1px solid #dbdbdb;
+  height: 800px;
+}
+#section2 {
+  background-color: white;
+  border-bottom: 1px solid #dbdbdb;
+  height: 600px;
+}
+
+#section2 p{
+  vertical-align: middle; display: table-cell
+}
+#section3 {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #dbdbdb;
+  height: 1300px;
+}
+#section-footer {
+  background-color: white;
+  min-height: 140px;
+}
+header,nav, a, img, li{
+  transition: all 0.1s;
+  -moz-transition: all 1s; /* Firefox 4 */
+  -webkit-transition: all 0.2s; /* Safari and Chrome */
+  -o-transition: all 1s; /* Opera */
+}
+
+
+#carousel {
+  width:1280px;
+  height:720px;
+  margin:0 auto;
+}
+#slides {
+  overflow:hidden;
+  /* fix ie overflow issue */
+  position:relative;
+  width:1280px;
+  height:720px;
+  border:1px solid #ccc;
+}
+/* remove the list styles, width : item width * total items */
+#slides ul {
+  position:relative;
+  left:0;
+  top:0;
+  list-style:none;
+  margin:0;
+  padding:0;
+  width:3840px;
+}
+/* width of the item, in this case I put 250x250x gif */
+#slides li {
+  width:1278px;
+  height:720px;
+  float:left;
+}
+#slides li img {
+  padding:5px;
+}
+/* Styling for prev and next buttons */
+#buttons {
+  padding:0 0 5px 0;
+  margin-left: auto;
+  margin-right: 48%;
+  float:right;
+}
+#buttons a {
+  display:block;
+  width:31px;
+  height:32px;
+  margin-left: auto;
+  margin-right: auto;
+  text-indent:-999em;
+  float:left;
+  outline:0;
+}
+
+.social-media a{
+  display:block;
+  padding: 5px;
+  width:117px;
+  height:117px;
+  margin-left: auto;
+  margin-right: auto;
+  text-indent:-999em;
+  float:left;
+  outline:0;
+}
+a#prev {
+  background:url('/elements/arrow.gif') 0 -31px no-repeat; ;
+}
+a#prev:hover {
+  background:url(/elements/arrow.gif) 0 0 no-repeat;
+}
+a#next {
+  background:url(/elements/arrow.gif) -32px -31px no-repeat;
+}
+a#next:hover {
+  background:url(/elements/arrow.gif) -32px 0 no-repeat;
+}
+a#facebook {
+  background:url(/elements/social.jpg) -310px -20px no-repeat;
+}
+a#twitter {
+  background:url(/elements/social.jpg) -38px -20px no-repeat;
+}
+a#google {
+  background:url(/elements/social.jpg) -313px -328px no-repeat;
+}
+.clear {clear:both}
+
+#overlay {
+  visibility: hidden;
+  position: fixed;
+  left: 40%;
+  top: 40%;
+  width:400px;
+  height:200px;
+  text-align:center;
+  z-index: 1000;
+//  background-image:url(background-trans.png);
+  background-color: wheat;
+  border-radius: 15px;
+}
